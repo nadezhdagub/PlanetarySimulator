@@ -1,0 +1,26 @@
+.window {
+    -fx-background-image: url("images/system.jpg");
+}
+.field {
+    -fx-opacity: 0.9;
+}
+.help {
+    -fx-border-width: 1px;
+}
+.help:hover {
+    -fx-background-color: #2A4480;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+}
+
+.load {
+    -fx-border-width: 1px;
+}
+.load:hover {
+    -fx-background-color: #204913;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+}
+.text {
+    -fx-text-fill: white;
+}

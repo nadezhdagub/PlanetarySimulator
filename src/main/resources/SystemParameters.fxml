@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="334.0" prefWidth="477.0" styleClass="window" stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="simulator.controller.ControllerOfTheSystem">
+   <Text fill="WHITE" layoutX="26.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0"
+         text="Configuring basic parameters of the planetary system">
+      <font>
+         <Font size="16.0"/>
+      </font>
+   </Text>
+   <TextField id="mass" fx:id="mass" layoutX="246.0" layoutY="121.0" prefHeight="29.0" prefWidth="181.0"
+              promptText="*10^28 kg"/>
+   <TextField id="starRadius" fx:id="radius" layoutX="246.0" layoutY="157.0" prefHeight="29.0" prefWidth="181.0"
+              promptText="*10^11 km"/>
+   <TextField id="G" fx:id="G" layoutX="247.0" layoutY="194.0" prefHeight="29.0" prefWidth="181.0"
+              promptText="10^-11*m^3*kg^–1*s^–2"/>
+   <Slider fx:id="number" blendMode="ADD" blockIncrement="1.0" cache="true" cacheHint="SCALE" layoutX="246.0"
+           layoutY="229.0" majorTickUnit="1.0" max="10.0" min="1.0" minorTickCount="0" prefHeight="40.0"
+           prefWidth="181.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="1.0">
+   </Slider>
+   <Text fill="WHITE" layoutX="62.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mass of star"/>
+   <Text fill="WHITE" layoutX="62.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Radius of star"/>
+   <Text fill="WHITE" layoutX="62.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of planets"/>
+   <Button fx:id="apply" alignment="TOP_CENTER" disable="true" layoutX="210.0" layoutY="269.0" mnemonicParsing="false"
+           text="APPLY" />
+   <Button fx:id="help" layoutX="7.0" layoutY="7.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false"
+           prefHeight="29.0" prefWidth="29.0" styleClass="help" text="?"/>
+   <Text fill="WHITE" layoutX="63.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0"
+         text="Gravitational constant"/>
+   <Button fx:id="load" layoutX="422.0" layoutY="7.0" mnemonicParsing="false" text="Load" styleClass="load"/>
+</AnchorPane>
